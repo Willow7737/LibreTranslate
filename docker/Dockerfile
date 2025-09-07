@@ -44,4 +44,4 @@ RUN if [ "$with_models" = "true" ]; then  \
 
 EXPOSE 5000
 
-CMD ["./venv/bin/libretranslate", "--host", "0.0.0.0", "--port", "5000"]
+CMD ["sh", "-c", "echo 'Starting LibreTranslate on 0.0.0.0:5000' && ./venv/bin/libretranslate --host 0.0.0.0 --port 5000"]
