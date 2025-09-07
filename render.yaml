@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: libretranslate
+    env: docker
+    plan: free   # or starter/standard if you need more power
+    autoDeploy: true
+    envVars:
+      - key: PORT
+        value: 5000
